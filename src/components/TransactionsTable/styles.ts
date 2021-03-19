@@ -19,10 +19,17 @@ export const Container = styled.div`
       border: 0;
       background: var(--shape);
       color: var(--text-body);
-      border-radius: 0.25rem;
 
       &:first-child {
         color: var(--text-title);
+
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+
+      &:last-child {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
       }
 
       &.withdraw {
